@@ -52,7 +52,7 @@ export class PostsController {
    * @param id - The ID of the post to delete.
    */
   @Delete(':id')
-  remove(@Param('id') id: string) {
+  delete(@Param('id') id: string) {
     return this.postsService.remove(id);
   }
 }
