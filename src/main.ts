@@ -12,6 +12,8 @@ async function bootstrap() {
   // Use a global pipe to validate all incoming requests
   app.useGlobalPipes(new ValidationPipe());
 
-  await app.listen(3001);
+  const port = 3002;
+  await app.listen(port);
+ // console.log(`🚀 Server is running on http://localhost:${port}`);
 }
 bootstrap();
