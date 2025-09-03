@@ -8,3 +8,5 @@ import { CreatePostDto } from './create-post.dto';
  * fields they want to change.
  */
 export class UpdatePostDto extends PartialType(CreatePostDto) {}
+//export class UpdatePostDto {
+  
